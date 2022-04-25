@@ -1,9 +1,10 @@
 name: Java CI with Maven
 
-on: [push, pull_request]
-main
-flexible
-lombok
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ flexible, lombok  ]
 
 jobs:
   build:
